@@ -1,0 +1,264 @@
+%-------------------------
+% Resume in Latex
+% Author : Satyajit Samal
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{mathptmx}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      #3 & #4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Satyajit Samal} \\ \vspace{5pt}
+    \small {\raisebox{-0.1\height}{\scalebox{0.8}{\rotatebox[origin=c]{270}{\faPhone}}}} +91 9348569512 ~ {\raisebox{-0.1\height}\faMapMarkerAlt} Bhubaneswar, Odisha - 751021 \\ \vspace{5pt}
+    \href{satyajitsamal.workmail@gmail.com}
+    {\raisebox{-0.2\height}\faEnvelope} \underline{\textcolor{blue}{satyajitsamal.workmail@gmail.com}} ~ 
+    \href{https://satyajit-samal.vercel.app/}{\raisebox{-0.2\height}\faLaptopCode} \underline{\textcolor{blue}{Portfolio}} ~ 
+    \href{https://linkedin.com/in/satyajitsamal/}{\raisebox{-0.2\height}\faLinkedin} \underline{\textcolor{blue}{LinkedIn}} ~
+    \href{https://github.com/s-satyajit}{\raisebox{-0.2\height}\faGithub} \underline{\textcolor{blue}{GitHub}}
+    \vspace{6pt}
+\end{center}
+
+
+
+%-----------EDUCATION-----------
+\section{\textrm{\scalebox{1.2}{E}DUCATION}}
+
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Biju Pattanaik University of Technology}{Oct 2020 -- July 2024}
+      {Bachelor of Science in Computer Science}{Bhubaneswar, Odisha}
+      \vspace{6pt}
+  \resumeSubHeadingListEnd
+
+% %------RELEVANT COURSEWORK-------
+% \section{Relevant Coursework}
+%     %\resumeSubHeadingListStart
+%         \begin{multicols}{4}
+%             \begin{itemize}[itemsep=-5pt, parsep=3pt]
+%                 \item\small Data Structures
+%                 \item Software Methodology
+%                 \item Algorithms Analysis
+%                 \item Database Management
+%                 \item Artificial Intelligence
+%                 \item Internet Technology
+%                 \item Systems Programming
+%                 \item Computer Architecture
+%             \end{itemize}
+%         \end{multicols}
+%         \vspace*{2.0\multicolsep}
+%     %\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+
+
+
+\section{\textrm{\scalebox{1.2}{P}ROJECTS}}
+    \vspace{-5pt}
+    
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Code Editor Application} $|$ {React, CodeMirror, ContextAPI, MaterialUI} $|$ {\href{https://github.com/s-satyajit/WebCodeEditor}{\raisebox{-0.\height}\faGithub\ \underline{\textcolor{blue}{GitHub}}} ~ \href{https://web-code-editor-sigma.vercel.app/}{\raisebox{-0.\height}\faLaptop\ \underline{\textcolor{blue}{Live}}}}}
+          {Nov 2024}
+          \resumeItemListStart
+            \resumeItem{Developed a web-based code editor using React and CodeMirror, providing a robust coding environment.}
+            \resumeItem{Enhanced the user experience with features like syntax highlighting, error detection.}
+            \resumeItem{Designed a responsive and intuitive UI using HTML and CSS, ensuring cross-device compatibility.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{To-Do List Application} $|$ {React, Context API, Local Storage } $|$ {
+          \href{https://github.com/s-satyajit/TodoApp-ContextLocalStorage}{\raisebox{-0.\height}\faGithub\ \underline{\textcolor{blue}{GitHub}}} ~ \href{https://todo-context-local-pink.vercel.app/}{\raisebox{-0.\height}\faLaptop\ \underline{\textcolor{blue}{Live}}}
+          }}{Oct 2024}
+          \resumeItemListStart
+            \resumeItem{Built a robust task management app, enabling task creation, editing, and deletion with Context API for efficient state 
+            management.}
+            \resumeItem{Integrated LocalStorage to ensure persistent data across sessions, allowing users to track tasks seamlessly, 
+            enhancing user convenience. }
+            \resumeItem{Emphasized optimized performance with efficient event handling, enhancing responsiveness and user experience. }
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          \resumeProjectHeading
+          {\textbf{Tic Tac Toe Game Application} $|$ {React, Context API, TailwindCSS} $|$ {
+          \href{https://github.com/s-satyajit/TicTacToe-Reactjs}{\raisebox{-0.\height}\faGithub\ \underline{\textcolor{blue}{GitHub}}} ~ \href{https://tic-tac-toe-reactjs-gamma.vercel.app/}{\raisebox{-0.\height}\faLaptop\ \underline{\textcolor{blue}{Live}}}
+          }}{Oct 2024}
+          \resumeItemListStart
+            \resumeItem{Developed a classic Tic Tac Toe game using React, featuring a clean and intuitive user interface. 
+            .}
+            \resumeItem{Used Context API to handle game state, including undo/redo functionality and reset options. 
+            }
+            \resumeItem{Implemented the game logic for smooth gameplay and accurate win condition detection and styled with TailwindCSS. 
+            }
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          \resumeProjectHeading
+          {\textbf{Currency Converter Application} $|$ {React, JavaScript, API Integration}$|$ {\href{https://github.com/s-satyajit/CurrencyConverterApp-ReactJS}{\raisebox{-0.\height}\faGithub\ \underline{\textcolor{blue}{GitHub}}} ~ \href{https://currency-converter-reactjs-silk.vercel.app/}{\raisebox{-0.\height}\faLaptop\ \underline{\textcolor{blue}{Live}}}}}{Jun 2024}
+          \resumeItemListStart
+            \resumeItem{ Utilized React for building a responsive and interactive user interface.}
+            \resumeItem{Integrated a third-party API to fetch live exchange rates, ensuring accurate and up-to-date conversions.}
+            \resumeItem{Optimized performance by minimizing API calls and efficiently managing state with React Hooks. }
+          \resumeItemListEnd 
+          \vspace{5pt}
+    \resumeSubHeadingListEnd
+
+
+
+%-----------EXPERIENCE-----------
+\section{\textrm{\scalebox{1.2}{E}XPERIENCE}}
+
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {FluenceTech}{Dec 2022 -- Mar 2023}
+      {Front-end Developer Intern}{Bhubaneswar, Odisha}
+      \resumeItemListStart
+        \resumeItem{Built and optimized responsive, visually engaging web interfaces using HTML, CSS, JavaScript, and React, focusing on seamless user interactions and performance across various devices. }
+        \resumeItem{Developed dynamic user interfaces by transforming design mockups into functional and interactive web pages.}
+        \resumeItem{Improved user experience by implementing state management techniques and efficient DOM manipulation to enhance  
+application responsiveness and performance. }
+        \resumeItem{Collaborated with cross-functional teams to ensure a cohesive and intuitive user experience, ensuring design consistency and user-centric development. }
+      \resumeItemListEnd
+    \vspace{5pt}
+  \resumeSubHeadingListEnd
+
+
+%-----------INVOLVEMENT---------------
+\section{\textrm{\scalebox{1.2}{C}ERTIFICATE}}
+
+    \resumeSubHeadingListStart
+        \resumeSubheading{NullClass Certificate of Training}{May 2023}{HTML, CSS, JavaScript, React, NodeJS, MongoDB }{NullClass}
+            \resumeItemListStart
+                \resumeItem{Completed a comprehensive online training on Web Development, focusing on building a real-time website like StackOverflow.  }
+                \resumeItem{Gained hands-on experience in full-stack development, implementing real-time functionalities.  }
+            \resumeItemListEnd
+        \vspace{5pt}
+    \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{\textrm{\scalebox{1.2}{T}ECHNICAL \scalebox{1.2}{S}KILLS}}
+
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript, Java, HTML/CSS} \\
+     \textbf{Developer Tools}{: VS Code, Eclipse} \\
+     \textbf{Technologies/Frameworks}{: React, Redux, Node.js, Linux, GitHub, WordPress} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+\end{document}

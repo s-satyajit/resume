@@ -7,6 +7,7 @@
 
 \documentclass[letterpaper,11pt]{article}
 
+\usepackage{fontawesome5}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -25,9 +26,10 @@
 \usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage{hyperref}
-
 \setlength{\multicolsep}{-3.0pt}
 \setlength{\columnsep}{-1pt}
+\setlength{\footskip}{12pt}
+
 \input{glyphtounicode}
 
 
@@ -116,21 +118,19 @@
 
 \begin{document}
 
-%----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
 \begin{center}
     {\Huge \scshape Satyajit Samal} \\ \vspace{5pt}
-    \small {\raisebox{-0.1\height}{\scalebox{0.8}{\rotatebox[origin=c]{270}{\faPhone}}}} +91 9348569512 ~ {\raisebox{-0.1\height}\faMapMarkerAlt} Bhubaneswar, Odisha - 751021 \\ \vspace{5pt}
-    \href{satyajitsamal.workmail@gmail.com}
-    {\raisebox{-0.2\height}\faEnvelope} \underline{\textcolor{blue}{satyajitsamal.workmail@gmail.com}} ~ 
-    \href{https://satyajit-samal.vercel.app/}{\raisebox{-0.2\height}\faLaptopCode} \underline{\textcolor{blue}{Portfolio}} ~ 
-    \href{https://linkedin.com/in/satyajitsamal/}{\raisebox{-0.2\height}\faLinkedin} \underline{\textcolor{blue}{LinkedIn}} ~
-    \href{https://github.com/s-satyajit}{\raisebox{-0.2\height}\faGithub} \underline{\textcolor{blue}{GitHub}}
+    \small {\raisebox{-0.1\height}{\scalebox{0.8}{\rotatebox[origin=c]{270}{\faPhone}}}} +91 9348569512 ~ {\raisebox{-0.1\height}\faMapPin} Bhubaneswar, Odisha - 751021 \\ 
+    
+    \vspace{5pt}
+    
+    \href{satyajitsamal.workmail@gmail.com}{\raisebox{-0.3\height}\faEnvelope \hspace{2pt}\underline{\textcolor{blue}{satyajitsamal.workmail@gmail.com}}} ~ 
+    \href{https://satyajit-samal.vercel.app/}{\raisebox{-0.2\height}\faLaptopCode \hspace{2pt}\underline{\textcolor{blue}{Portfolio}}} ~ 
+    \href{https://linkedin.com/in/satyajitsamal/}{\raisebox{-0.1\height}\faLinkedin \hspace{2pt}\underline{\textcolor{blue}{LinkedIn}}} ~
+    \href{https://github.com/s-satyajit}{\raisebox{-0.1\height}\faGithub \hspace{2pt}\underline{\textcolor{blue}{GitHub}}}
+    
     \vspace{6pt}
+    
 \end{center}
 
 
@@ -141,27 +141,9 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Biju Pattanaik University of Technology}{Oct 2020 -- July 2024}
-      {Bachelor of Science in Computer Science}{Bhubaneswar, Odisha}
+      {Bachelor of Technology in Computer Science}{Bhubaneswar, Odisha}
       \vspace{6pt}
   \resumeSubHeadingListEnd
-
-% %------RELEVANT COURSEWORK-------
-% \section{Relevant Coursework}
-%     %\resumeSubHeadingListStart
-%         \begin{multicols}{4}
-%             \begin{itemize}[itemsep=-5pt, parsep=3pt]
-%                 \item\small Data Structures
-%                 \item Software Methodology
-%                 \item Algorithms Analysis
-%                 \item Database Management
-%                 \item Artificial Intelligence
-%                 \item Internet Technology
-%                 \item Systems Programming
-%                 \item Computer Architecture
-%             \end{itemize}
-%         \end{multicols}
-%         \vspace*{2.0\multicolsep}
-%     %\resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
 
@@ -171,48 +153,65 @@
     \vspace{-5pt}
     
     \resumeSubHeadingListStart
+    
+          
       \resumeProjectHeading
-          {\textbf{Code Editor Application} $|$ {React, CodeMirror, ContextAPI, MaterialUI} $|$ {\href{https://github.com/s-satyajit/WebCodeEditor}{\raisebox{-0.\height}\faGithub\ \underline{\textcolor{blue}{GitHub}}} ~ \href{https://web-code-editor-sigma.vercel.app/}{\raisebox{-0.\height}\faLaptop\ \underline{\textcolor{blue}{Live}}}}}
+          {\textbf{LiveTalk - Multi User Chat Application} $|$ {React, Zustand, Firebase, Socket.IO } $|$ {
+          \href{https://github.com/s-satyajit/multi-user-chatApp}{\raisebox{-0.\height}\faGithub\ \underline{\textcolor{blue}{GitHub}}} ~ 
+          \href{https://multi-user-chat.vercel.app/}{\raisebox{-0.\height}\faLaptopCode\ \underline{\textcolor{blue}{Live}}}} ~
+          \href{https://www.linkedin.com/feed/update/urn:li:activity:7271581170591502339/}{\raisebox{-0.\height}\faLaptop\ \underline{\textcolor{blue}{Preview}}}
+          }
+          {Dec 2024}
+          \resumeItemListStart
+            \resumeItem{Built a real-time chat app using React, Socket.IO, and Firebase for multi-user messaging and instant updates.}
+            \resumeItem{Integrated Firebase Authentication for secure login and real-time data sync across devices.}
+            \resumeItem{Optimized UI for seamless, intuitive messaging and real-time communication.}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          
+          \resumeProjectHeading
+          {\textbf{Hirrd - Job Portal Application} $|$ {React, Context API, TailwindCSS, Supabase, Radix} $|$ {
+          \href{https://github.com/s-satyajit/hirrd-jobPortal}{\raisebox{-0.\height}\faGithub\ \underline{\textcolor{blue}{GitHub}}} ~ 
+          \href{https://job-portal-eight-delta.vercel.app/}{\raisebox{-0.\height}\faLaptopCode\ \underline{\textcolor{blue}{Live}}}} ~
+          \href{https://www.linkedin.com/feed/update/urn:li:activity:7269678588927336448/}{\raisebox{-0.\height}\faLaptop\ \underline{\textcolor{blue}{Preview}}}
+          }
+          {Dec 2024}
+          \resumeItemListStart
+            \resumeItem{Developed a job portal with React, Supabase, and Clerk, enabling users to create profiles and apply for jobs.}
+            \resumeItem{Implemented Clerk authentication and used Supabase for efficient database management.}
+            \resumeItem{Enhanced UI/UX with Shadcn UI and Radix UI for a responsive, user-friendly design.
+}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          
+          \resumeProjectHeading
+          {\textbf{TeamZen - Employee Management System} $|$ {React, Context API, Tailwind CSS}$|$ {
+          \href{https://github.com/s-satyajit/employee-management-system}{\raisebox{-0.\height}\faGithub\ \underline{\textcolor{blue}{GitHub}}} ~ 
+          \href{https://teamzen.vercel.app/}{\raisebox{-0.\height}\faLaptopCode\ \underline{\textcolor{blue}{Live}}}} ~
+          \href{https://www.linkedin.com/feed/update/urn:li:activity:7274346311833853952/}{\raisebox{-0.\height}\faLaptop\ \underline{\textcolor{blue}{Preview}}}
+          }
+          {Dec 2024}
+          \resumeItemListStart
+            \resumeItem{Built an employee management system with React and Context API for tracking employee records.}
+            \resumeItem{Implemented data persistence with localStorage, allowing employees' data to be stored and retrieved without requiring a backend, ensuring a fast and smooth user experience.}
+            \resumeItem{Styled the application with Tailwind CSS, providing a clean, responsive design that adapts seamlessly across devices while maintaining a user-friendly interface.}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          
+      \resumeProjectHeading
+          {\textbf{CodeStudio - Web Code Editor} $|$ {React, CodeMirror, ContextAPI, MaterialUI} $|$ {
+          \href{https://github.com/s-satyajit/WebCodeEditor}{\raisebox{-0.\height}\faGithub\ \underline{\textcolor{blue}{GitHub}}} ~ 
+          \href{https://web-code-editor-sigma.vercel.app/}{\raisebox{-0.\height}\faLaptopCode\ \underline{\textcolor{blue}{Live}}}} ~
+          \href{https://www.linkedin.com/feed/update/urn:li:activity:7265341855377088512/}{\raisebox{-0.\height}\faLaptop\ \underline{\textcolor{blue}{Preview}}}
+          }
           {Nov 2024}
           \resumeItemListStart
-            \resumeItem{Developed a web-based code editor using React and CodeMirror, providing a robust coding environment.}
+            \resumeItem{Leveraged CodeMirror for syntax highlighting and code formatting, improving readability and enhancing the user experience for developers.}
             \resumeItem{Enhanced the user experience with features like syntax highlighting, error detection.}
-            \resumeItem{Designed a responsive and intuitive UI using HTML and CSS, ensuring cross-device compatibility.}
+            \resumeItem{Styled with Material UI, ensuring a modern, responsive design that adapts across devices while offering an intuitive and user-friendly interface for seamless code editing.}
           \resumeItemListEnd
-          \vspace{-13pt}
-      \resumeProjectHeading
-          {\textbf{To-Do List Application} $|$ {React, Context API, Local Storage } $|$ {
-          \href{https://github.com/s-satyajit/TodoApp-ContextLocalStorage}{\raisebox{-0.\height}\faGithub\ \underline{\textcolor{blue}{GitHub}}} ~ \href{https://todo-context-local-pink.vercel.app/}{\raisebox{-0.\height}\faLaptop\ \underline{\textcolor{blue}{Live}}}
-          }}{Oct 2024}
-          \resumeItemListStart
-            \resumeItem{Built a robust task management app, enabling task creation, editing, and deletion with Context API for efficient state 
-            management.}
-            \resumeItem{Integrated LocalStorage to ensure persistent data across sessions, allowing users to track tasks seamlessly, 
-            enhancing user convenience. }
-            \resumeItem{Emphasized optimized performance with efficient event handling, enhancing responsiveness and user experience. }
-          \resumeItemListEnd 
-          \vspace{-13pt}
-          \resumeProjectHeading
-          {\textbf{Tic Tac Toe Game Application} $|$ {React, Context API, TailwindCSS} $|$ {
-          \href{https://github.com/s-satyajit/TicTacToe-Reactjs}{\raisebox{-0.\height}\faGithub\ \underline{\textcolor{blue}{GitHub}}} ~ \href{https://tic-tac-toe-reactjs-gamma.vercel.app/}{\raisebox{-0.\height}\faLaptop\ \underline{\textcolor{blue}{Live}}}
-          }}{Oct 2024}
-          \resumeItemListStart
-            \resumeItem{Developed a classic Tic Tac Toe game using React, featuring a clean and intuitive user interface. 
-            .}
-            \resumeItem{Used Context API to handle game state, including undo/redo functionality and reset options. 
-            }
-            \resumeItem{Implemented the game logic for smooth gameplay and accurate win condition detection and styled with TailwindCSS. 
-            }
-          \resumeItemListEnd 
-          \vspace{-13pt}
-          \resumeProjectHeading
-          {\textbf{Currency Converter Application} $|$ {React, JavaScript, API Integration}$|$ {\href{https://github.com/s-satyajit/CurrencyConverterApp-ReactJS}{\raisebox{-0.\height}\faGithub\ \underline{\textcolor{blue}{GitHub}}} ~ \href{https://currency-converter-reactjs-silk.vercel.app/}{\raisebox{-0.\height}\faLaptop\ \underline{\textcolor{blue}{Live}}}}}{Jun 2024}
-          \resumeItemListStart
-            \resumeItem{ Utilized React for building a responsive and interactive user interface.}
-            \resumeItem{Integrated a third-party API to fetch live exchange rates, ensuring accurate and up-to-date conversions.}
-            \resumeItem{Optimized performance by minimizing API calls and efficiently managing state with React Hooks. }
-          \resumeItemListEnd 
           \vspace{5pt}
+          
     \resumeSubHeadingListEnd
 
 
@@ -226,27 +225,34 @@
       {FluenceTech}{Dec 2022 -- Mar 2023}
       {Front-end Developer Intern}{Bhubaneswar, Odisha}
       \resumeItemListStart
-        \resumeItem{Built and optimized responsive, visually engaging web interfaces using HTML, CSS, JavaScript, and React, focusing on seamless user interactions and performance across various devices. }
-        \resumeItem{Developed dynamic user interfaces by transforming design mockups into functional and interactive web pages.}
-        \resumeItem{Improved user experience by implementing state management techniques and efficient DOM manipulation to enhance  
-application responsiveness and performance. }
-        \resumeItem{Collaborated with cross-functional teams to ensure a cohesive and intuitive user experience, ensuring design consistency and user-centric development. }
+        \resumeItem{Designed and developed responsive web interfaces using HTML, CSS, JavaScript, and React, ensuring seamless performance and accessibility across devices, including mobile and desktop.}
+        \resumeItem{Translated Figma design mockups into interactive, feature-rich web pages, enhancing user engagement.}
+        \resumeItem{Improved application responsiveness by implementing effective state management techniques and optimizing DOM manipulation for faster load times and smoother interactions.}
+        \resumeItem{Worked closely with designers and back-end developers, aligning on functionality and aesthetics to deliver cohesive, user-focused solutions while maintaining consistency in design and performance.}
       \resumeItemListEnd
     \vspace{5pt}
   \resumeSubHeadingListEnd
 
+\begin{}
+  
+\end{}
 
 %-----------INVOLVEMENT---------------
 \section{\textrm{\scalebox{1.2}{C}ERTIFICATE}}
 
     \resumeSubHeadingListStart
-        \resumeSubheading{NullClass Certificate of Training}{May 2023}{HTML, CSS, JavaScript, React, NodeJS, MongoDB }{NullClass}
-            \resumeItemListStart
-                \resumeItem{Completed a comprehensive online training on Web Development, focusing on building a real-time website like StackOverflow.  }
-                \resumeItem{Gained hands-on experience in full-stack development, implementing real-time functionalities.  }
-            \resumeItemListEnd
-        \vspace{5pt}
-    \resumeSubHeadingListEnd
+    \resumeSubheading
+        {NullClass Certificate of Training $|$ \href{https://drive.google.com/file/d/1GZ8qfVwk2DCE8oYuyjaqF5XNRdcQWHjE/view}{\raisebox{0.09\height}{\scalebox{0.8}{\faFileContract}} \underline{\textcolor{Blue}{\textnormal{Drive Link}}}}}
+        {May 2023}
+        {HTML, CSS, JavaScript, React, NodeJS, MongoDB}
+        {NullClass}
+        \resumeItemListStart
+            \resumeItem{Completed a comprehensive online training on Web Development, focusing on building a real-time website like StackOverflow.}
+            \resumeItem{Gained hands-on experience in full-stack development, implementing real-time functionalities.}
+        \resumeItemListEnd
+    \vspace{5pt}
+\resumeSubHeadingListEnd
+
 
 %
 %-----------PROGRAMMING SKILLS-----------
@@ -255,8 +261,8 @@ application responsiveness and performance. }
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Languages}{: JavaScript, Java, HTML/CSS} \\
-     \textbf{Developer Tools}{: VS Code, Eclipse} \\
-     \textbf{Technologies/Frameworks}{: React, Redux, Node.js, Linux, GitHub, WordPress} \\
+     \textbf{Developer Tools}{: Linux, GitHub, CI/CD} \\
+     \textbf{Technologies/Frameworks}{: React, Redux, Zustand, Tailwind CSS, Material UI, Node.js, Firebase, Appwrite} \\
     }}
  \end{itemize}
  \vspace{-16pt}
